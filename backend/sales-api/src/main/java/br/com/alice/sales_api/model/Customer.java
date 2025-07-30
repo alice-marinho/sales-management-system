@@ -1,6 +1,7 @@
 package br.com.alice.sales_api.model;
 
 import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "customers") // Nome da tabela no banco
@@ -66,11 +67,4 @@ public class Customer {
         this.salesman = salesman;
     }
 
-    public List<Orders> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Orders> orders) {
-        this.orders = orders;
-    }
 }
